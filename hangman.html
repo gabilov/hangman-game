@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="hangman.css">
+</head>
+<body>
+
+    <!-- Main Menu Page -->
+    <div id="main-menu" class="page">
+        <div class="transparent-square">
+            <h1 class="title">
+                <img src="hangergamelogo.png.svg" alt="The Hangman Game">
+            </h1>
+            <button id="play-button" class="primary-button">
+                <img src="icon-play.svg" alt="Play">
+            </button>
+            <button id="how-to-play-button" class="secondary-button">How to Play</button>
+        </div>
+    </div>
+
+<!-- How to Play Page -->
+<div id="how-to-play" class="page" style="display: none;">
+    <h2 class="howto-title">How to Play</h2>
+    <div class="howto-steps">
+        <div class="howto-step">
+            <h3>01</h3>
+            <h2>CHOOSE A CATEGORY</h2>
+            <p>Choose a category. First, choose a word category like animals or movies. The computer then randomly selects a secret word from that topic and shows you blanks for each letter of the word.</p>
+        </div>
+        <div class="howto-step">
+            <h3>02</h3>
+            <h2>GUESS LETTERS</h2>
+            <p>Guess letters. Take turns guessing letters. The computer fills in the relevant blank spaces if your guess is correct. If it's wrong, you lose some health, which empties after eight incorrect guesses.</p>
+        </div>
+        <div class="howto-step">
+            <h3>03</h3>
+            <h2>WIN OR LOSE</h2>
+            <p>Win or lose. You win by guessing all the letters in the word before your health runs out. If the health bar empties before you guess the word, you lose.</p>
+        </div>
+    </div>
+    <button id="back-to-menu" class="backtobtnrules">
+        <img src="icon-back.svg" alt="Back">
+    </button>
+</div>
+
+
+    <!-- Category Selection Page -->
+    <div id="category-selection" class="page" style="display: none;">
+        <h2 id = "pick-up" class="pick-up">Pick a Category</h2>
+        <div class="row">
+          <div class="column">
+            <button class="category-button" onclick="startGame('Movies')">Movies</button>
+            <button class="category-button" onclick="startGame('TV Shows')">TV Shows</button>
+          </div>
+          <div class="column">
+            <button class="category-button" onclick="startGame('Countries')">Countries</button>
+            <button class="category-button" onclick="startGame('Capital Cities')">Capital Cities</button>
+          </div>
+          <div class="column">
+            <button class="category-button" onclick="startGame('Animals')">Animals</button>
+            <button class="category-button" onclick="startGame('Sports')">Sports</button>
+          </div>
+        </div>
+        <button id="back-to-main" class="secondary-button2">
+          <img src="icon-back.svg" alt="Back">
+        </button>
+      </div>
+
+    <!-- Game Page -->
+    <div id="game-page" class="page" style="display: none;">
+        <h2 id="category-title">Movies</h2>
+        <div id="word-display" class = "helloword"></div>
+        <div id="health-bar"></div>
+        <div id="alphabet-container" class = "alphabet-container"></div>
+        <button id="pause" class="lastbackbtn">
+            <img src="backicon.png" alt="Back">
+        </button>
+    </div>
+
+ 
+
+<!-- Pause Overlay -->
+<div id="pause-overlay" class="overlay">
+    <div class="overlay-content pause-menu">
+      <h3>Paused</h3>
+      <button id="continue-button">Continue</button>
+      <button id="new-category-button">New Category</button>
+      <button id="quit-game-button">Quit Game</button>
+    </div>
+  </div>
+  
+  <!-- Game End Overlay -->
+  <div id="game-end-overlay" class="overlay">
+    <div class="overlay-content pause-menu">
+      <h3 id="end-message">Game Over</h3>
+      <div id="revealed-word"></div>
+      <button id="continue-game-button">Continue</button>
+      <button id="new-category-end-button">New Category</button>
+      <button id="quit-end-game-button">Quit Game</button>
+    </div>
+  </div>
+  
+
+    <script src="hangman.js"></script>
+</body>
+</html>
