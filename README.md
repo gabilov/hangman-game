@@ -43,4 +43,4 @@ open hangman.html   # or double-click the file
 - The layout isn't fully responsive on small screens
 
 ## Credits
-The challenge and the design brief are from [Frontend Mentor](https://www.frontendmentor.io). The code is mine.
+The challenge and the design brief are from [Frontend Mentor](https://www.frontendmentor.io).
