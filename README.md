@@ -1,5 +1,7 @@
 # Hangman Game
 
+**▶ [Play it live](https://gabilov.github.io/hangman-game/)**
+
 A browser-based Hangman game built with plain HTML, CSS and JavaScript, based on the [Hangman game challenge](https://www.frontendmentor.io/challenges/hangman-game-rsQiSVLGWn) from Frontend Mentor.
 
 This was one of my first front-end projects (December 2024). I built it to practice DOM manipulation, managing game state and moving between screens without a framework.
@@ -17,12 +19,12 @@ This was one of my first front-end projects (December 2024). I built it to pract
 Main menu → How to play → Category selection → Game → Pause / end screen
 
 ## How to run
-No build step. Clone the repo and open `hangman.html` in a browser.
+No build step. Clone the repo and open `index.html` in a browser.
 
 ```bash
 git clone https://github.com/gabilov/hangman-game.git
 cd hangman-game
-open hangman.html   # or double-click the file
+open index.html   # or double-click the file
 ```
 
 ## Built with
