@@ -39,8 +39,6 @@ open index.html   # or double-click the file
 - Using overlays for the pause and end-of-game menus
 
 ## Known issues and next steps
-- The "How to Play" text says 8 wrong guesses, but the game allows 6
-- The "Continue" button on the end screen adds a new click listener after every game, so it can trigger more than once
 - No physical keyboard input yet
 - The layout isn't fully responsive on small screens
 

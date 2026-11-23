@@ -217,11 +217,6 @@ function endGame(won, currentWord) {
   
   // Show the game over overlay
   toggleOverlay(gameEndOverlay, true);
-  
- 
-  continueGameBtn.addEventListener('click', () => {
-    restartGame();
-  });
 }
 
 
